@@ -15,9 +15,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        <link href="/public/css/styles.css" rel="stylesheet" />
     </head>
-    <style>
+    <!-- <style>
         html {
   scroll-padding-top: 4.5rem;
 }
@@ -140,7 +140,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../asset/img/bgimage.jpg");
+  background-image: url("/pulic/asset/img/bgimage.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -450,7 +450,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("/public/assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -727,7 +727,7 @@ header.masthead {
 }
 
 
-    </style>
+    </style> -->
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
