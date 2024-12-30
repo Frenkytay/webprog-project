@@ -23,5 +23,9 @@ class AppServiceProvider extends ServiceProvider
         if(config('app.env') === 'production') {
             URL::forceScheme('https');
         }
+        \Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::except([
+            '/login',
+            '/register'
+        ]);
     }
 }
