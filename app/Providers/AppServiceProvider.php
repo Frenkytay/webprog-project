@@ -25,7 +25,8 @@ class AppServiceProvider extends ServiceProvider
         }
         \Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::except([
             '/login',
-            '/register'
+            '/register',
+            '/register-as-partner'
         ]);
     }
 }
