@@ -1,19 +1,16 @@
 {
     "version": 2,
     "framework": null,
-    "builds": [{ "src": "api/index.php", "use": "@vercel/php" }],
+
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.7.0" }
     },
-    "routes": [
-        { "src": "/build/(.*)", "dest": "/build/$1" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
-    ],
-    "buildCommand": "vite build",
+    "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }],
+
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://webprog-project-taupe.vercel.app/",
         "APP_KEY": "base64:TGaVaXwhWgjn9akhE4SCSIjGG/cQqvICUQ+PgLA3Bs0=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
