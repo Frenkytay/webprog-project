@@ -1,15 +1,14 @@
 {
     "version": 2,
     "framework": null,
-
+    "builds": [{ "src": "api/index.php", "use": "@vercel/php" }],
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.7.0" }
     },
     "routes": [
-        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/build/(.*)", "dest": "/build/$1" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
-    "public": true,
     "buildCommand": "vite build",
     "outputDirectory": "public",
     "env": {
@@ -30,6 +29,7 @@
         "DB_HOST": "mysql-85ddbd6-frenky-a066.g.aivencloud.com",
         "DB_PORT": "12945",
         "DB_DATABASE": "defaultdb",
-        "DB_USERNAME": "avnadmin"
+        "DB_USERNAME": "avnadmin",
+        "DB_PASSWORD": "your-database-password"
     }
 }
