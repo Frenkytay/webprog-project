@@ -17,7 +17,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <!-- <link href="/public/css/styles.css" rel="stylesheet" /> -->
     </head>
-    <!-- <style>
+    <style>
         html {
   scroll-padding-top: 4.5rem;
 }
@@ -727,7 +727,7 @@ header.masthead {
 }
 
 
-    </style> -->
+    </style>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
