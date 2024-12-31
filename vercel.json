@@ -27,6 +27,5 @@
         "DB_PORT": "12945",
         "DB_DATABASE": "defaultdb",
         "DB_USERNAME": "avnadmin",
-        "DB_PASSWORD": "your-database-password"
     }
 }
